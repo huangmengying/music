@@ -1,16 +1,24 @@
 <template>
   <div id="app">
-  hello world
+  <MHeader></MHeader>
   </div>
 </template>
 
 <script>
+  import MHeader from 'components/m-header/m-header'
+
 export default {
+    components: {
+      MHeader
+    }
 }
 </script>
 
-<style>
+<style lang="stylus" scoped rel="stylesheet/stylus">
+
 #app {
- 
+  background:#222;
 }
+
+
 </style>
