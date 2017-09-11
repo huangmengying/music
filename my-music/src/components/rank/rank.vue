@@ -1,5 +1,5 @@
 <template>
-  <div class="rank">排行</div>
+  <div class="rank">热门歌曲</div>
 </template>
 
 <script type="text/ecmascript-6">
