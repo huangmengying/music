@@ -13,13 +13,15 @@
     </div>
     <div class="recommend-list">
       <h1>热门歌单推荐</h1>
-      <ul></ul>
+      <ul>
+        <li v-for="item in discList" class="item"></li>
+      </ul>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-//  import Slider from 'base/slider/slider'
+  import Slider from 'base/slider/slider'
   import {getRecommend} from 'api/recommend'
   import {ERR_OK} from 'api/config'
   export default {
@@ -37,9 +39,13 @@
           if (res.code === ERR_OK) {
             this.recommends = res.data.slider
             console.log(res.data.slider)
+//            console.log(this.recommends)
           }
         })
       }
+    },
+    components: {
+      Slider
     }
   }
 </script>
