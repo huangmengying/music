@@ -77,6 +77,9 @@
     height: 100%;
     top: 88px;
     bottom: 0;
+    overflow-y: scroll;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
   }
   .recommend-wrapper {
   height: 160px;
